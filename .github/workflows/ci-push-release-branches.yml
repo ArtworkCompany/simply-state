@@ -13,20 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: npm/action-setup@v2
-        with:
-          version: latest
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
       - name: Install dependencies
         run: npm install
       - name: Run tests
-        run: npm test
+        run: npm run test
       - name: Build project
-        run: npm build
+        run: npm run build
       - name: Release new package version
-        run: npm semantic-release
+        run: npm run semantic-release
         env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

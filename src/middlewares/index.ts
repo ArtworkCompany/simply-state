@@ -1,1 +1,2 @@
-export * from './thunkMiddleware';
+export { createThunkMiddleware } from './thunkMiddleware';
+export type { ThunkAction } from './thunkMiddleware';

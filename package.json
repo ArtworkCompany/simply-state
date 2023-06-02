@@ -1,5 +1,5 @@
 {
-  "name": "@artwork/simply-state",
+  "name": "simply-state",
   "version": "1.0.0",
   "description": "A simple state management library using immer",
   "keywords": [
@@ -12,6 +12,7 @@
     "simply",
     "simply-state"
   ],
+  "bugs": "https://github.com/ArtworkCompany/simply-state/issues",
   "repository": "github:ArtworkCompany/simply-state",
   "license": "MIT",
   "author": "Samir ZEKRI <s.zekri@artworkcompany.fr> (https://github.com/ArtworkCompany)",
@@ -26,18 +27,19 @@
   "module": "./dist/index.mjs",
   "typings": "./dist/index.d.ts",
   "files": [
-    "src",
-    "dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
-    "clean": "rimraf dist",
     "build": "tsup",
     "format": "prettier --write {*,src/**/*,test/**/*,.vscode/**/*}.{ts,json,yml,yaml}",
     "lint": "eslint --fix --cache .",
     "prepare": "husky install",
     "test": "vitest --run",
     "test:watch": "vitest --watch",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -46,12 +48,15 @@
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@vitest/coverage-c8": "^0.31.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
-    "rimraf": "^5.0.1",
+    "semantic-release": "^21.0.2",
+    "sort-package-json": "^2.4.1",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.3"
