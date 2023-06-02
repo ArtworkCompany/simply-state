@@ -12,6 +12,7 @@
     "simply",
     "simply-state"
   ],
+  "bugs": "https://github.com/ArtworkCompany/simply-state/issues",
   "repository": "github:ArtworkCompany/simply-state",
   "license": "MIT",
   "author": "Samir ZEKRI <s.zekri@artworkcompany.fr> (https://github.com/ArtworkCompany)",
@@ -30,7 +31,6 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rimraf dist",
     "build": "tsup",
     "format": "prettier --write {*,src/**/*,test/**/*,.vscode/**/*}.{ts,json,yml,yaml}",
     "lint": "eslint --fix --cache .",
@@ -47,13 +47,15 @@
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@vitest/coverage-c8": "^0.31.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "semantic-release": "^21.0.2",
-    "rimraf": "^5.0.1",
+    "sort-package-json": "^2.4.1",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.3"
