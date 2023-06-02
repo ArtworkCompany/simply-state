@@ -1,6 +1,6 @@
 {
   "name": "@artwork/simply-state",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A simple state management library using immer",
   "keywords": [
     "react",
