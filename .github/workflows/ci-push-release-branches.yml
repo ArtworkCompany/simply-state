@@ -20,10 +20,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run tests
-        run: npm test
+        run: npm run test
       - name: Build project
-        run: npm build
+        run: npm run build
       - name: Release new package version
-        run: npm semantic-release
+        run: npm run semantic-release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
