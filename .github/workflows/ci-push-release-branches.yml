@@ -26,4 +26,5 @@ jobs:
       - name: Release new package version
         run: npm run semantic-release
         env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
