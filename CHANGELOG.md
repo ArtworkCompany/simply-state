@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ArtworkCompany/simply-state/compare/v1.0.0...v1.1.0) (2023-06-06)
+
+
+### Features
+
+* README ([b2eec62](https://github.com/ArtworkCompany/simply-state/commit/b2eec62d80cf7fe0115bb5e109d5130e41fe3726))
+
 # 1.0.0 (2023-06-02)
 
 
