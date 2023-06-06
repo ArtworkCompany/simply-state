@@ -27,8 +27,9 @@
   "module": "./dist/index.mjs",
   "typings": "./dist/index.d.ts",
   "files": [
-    "src",
-    "dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "build": "tsup",

@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 
-import { Store } from '../src';
+import { Action, Store } from '../src';
 
 describe('Store', () => {
   const initialState = {
@@ -18,9 +18,11 @@ describe('Store', () => {
   });
 
   it('should update the state', () => {
-    store.dispatch(state => {
-      state.count++;
-    });
+    const increment: Action<typeof initialState> = state => {
+      state.count += 1;
+    };
+
+    store.dispatch(increment);
 
     expect(store.getState()).toEqual({
       count: 1,
